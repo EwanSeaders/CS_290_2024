@@ -5,6 +5,8 @@ p {
     overflow: auto;
 }
 
+
+/* start ul and il styles (used for menubar) */
 ul {
     margin: 0px;
     list-style-type: none;
@@ -21,9 +23,14 @@ li a {
     padding-right: 10px;
 }
 
-li a:hover {
+li a:hover{
     background-color: #e68a00;
+
 }
+/* end ul and li styles */
+
+
+
 
 body {
     padding-left: 10px;
@@ -37,7 +44,7 @@ body {
     color: navy;
 }
 
-/* grid for the menu */
+/* grid for the menu bar styles */
 .menu-bar {
     display: grid;
     grid-template-columns: auto auto;
@@ -48,6 +55,44 @@ body {
     z-index: 1;
     position: sticky;
     top: 0;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.drop-menu {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0px 10px 0px 10px;
+}
+
+.drop-menu-block {
+    width: 200px;
+    background-color: #4d2600;
+    color: white;
+    display: none;
+    position: absolute;
+    border-top: 10px;
+}
+
+.drop-menu-block:hover {
+    background-color: #333333;
+}
+
+.drop-menu:hover .drop-menu-block {
+    display: block;
+}
+
+.make-hover {
+    background-color: #262626;
+    color: white;
+    margin: 0px;
+
+}
+
+.make-hover:hover {
+    background-color: #b3b3b3;
+    color: black;
 }
 
 .back-photo {
@@ -66,10 +111,27 @@ body {
     text-align: right;
     padding-right: 20px;
     padding-top: 10px;
+    
+
 }
 
+/* search bar styles */
+.search {    
+    float: right;
+    padding: 0px;
+    margin-right: 10px;
+    width: 200px;
 
+}
 
+.search input[type=text] {
+    float: right;
+    padding: 3px;
+    margin-top: 6px;
+    margin-right: 10px;
+    border: 1px black;
+    font-size: 12pt;
+}
 
 
 /* Quick list styles */
@@ -137,10 +199,18 @@ body {
     margin: 0px;
     background-color: inherit;
 }
+
+
+
 div.photo {
     float: right ;
     min-width: 355px;
     margin-bottom: 20px;
     margin-right: 40px;
-
 }
+
+div[display~="grid"] {
+    
+}
+
+
