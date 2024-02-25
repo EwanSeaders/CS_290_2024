@@ -1,0 +1,92 @@
+
+* {
+    box-sizing: border-box;
+    }
+    
+.box {
+    /* float: left; */
+    width: 33%;
+    padding: 0px;
+    height: 200px;
+    border: 2px black;
+    min-width: 175px;
+    background-color: #bbb;
+    
+    
+
+    }
+.space {
+    /* float: left; */
+    width: .5%;
+    padding: 0px;
+    height: 200px;
+    color: white;
+    }
+    
+/* .main_block::after {
+    content: "";
+    clear: both;
+    display: table;
+    } */
+
+.main_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0px, 0px, 0px, 50px;
+    padding: 10px, 5px, 1px, 0px;
+    margin: 10px, 5px, 1px, 0px;
+    
+}
+    
+p.what_concrete {
+    /* float: left; */
+    display: flex;
+    width: 100%;
+    height: 100px;
+    color: #7e7e7e;
+    /* background-color: black; */
+    /* vertical-align: baseline; */
+    /* margin-top: 10px; */
+    background-image: "cutting.jpg";
+    border: 5px black;
+    }
+p.style_1 {
+    color:cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgrey;
+    /* padding: 5px;
+    border: 10px; */
+    text-align: center;
+    text-decoration: overline;
+    width: fit-content;
+    border-color: black;
+    /* border: 10px, 5px, 1px, 0px; */
+    
+}
+
+li {
+    /* border-color: cadetblue; */
+    /* border-width: 12px; */
+    border-left: 12px cadetblue;
+    background-size: auto;
+    margin-left: 5px;
+    
+}
+
+li:nth-child(odd) {
+    background-color: rgb(204, 204, 204)
+}
+
+#bottom {}
+
+.menu {
+    width: 100%;
+    height: 20px; 
+    border: 1px solid black;
+    padding: 3px blue;
+    /* <button role="button" onclick="myFunction()">Click me</button> */
+    role= button: onclick(bottom)
+    text-align: left;
+
+}
