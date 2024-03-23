@@ -262,11 +262,13 @@ function populateGrid(arr) {
   document.getElementById('mainGrid').innerHTML = string;
 }
 populateGrid(parseCSV(listCSV));
+
+
+
+
 let test_bool = true;
 let test_num = 25;
 let test_array = ["hello", true, 45, "test"];
-
-
 test_array.push(test_bool)
 
 console.log(test_array)
