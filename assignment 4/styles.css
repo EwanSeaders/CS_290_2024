@@ -1,0 +1,235 @@
+/* style sheet for naruto fillers webpage */
+
+p {
+    padding: 10px;
+    overflow: auto;
+}
+
+
+/* start ul and il styles (used for menubar) */
+ul {
+    margin: 0px;
+    list-style-type: none;
+    background-color: orange;
+    padding: 10px 10px;
+}
+
+li {float: left; text-align: center;}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li a:hover{
+    background-color: #e68a00;
+
+}
+/* end ul and li styles */
+
+
+
+
+body {
+    padding-left: 10px;
+    min-width: 370px;
+    font-family: "papyrus";
+}
+
+/* style for the header  */
+.crown {
+    background-color: white;
+    color: navy;
+}
+
+/* grid for the menu bar styles */
+.menu-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: orange;
+    color: navy;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 1;
+    position: sticky;
+    top: 0;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.drop-menu {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0px 10px 0px 10px;
+}
+
+.drop-menu-block {
+    width: 200px;
+    background-color: #4d2600;
+    color: white;
+    display: none;
+    position: absolute;
+    border-top: 10px;
+}
+
+.drop-menu-block:hover {
+    background-color: #333333;
+}
+
+.drop-menu:hover .drop-menu-block {
+    display: block;
+}
+
+.make-hover {
+    background-color: #262626;
+    color: white;
+    margin: 0px;
+
+}
+
+.make-hover:hover {
+    background-color: #b3b3b3;
+    color: black;
+}
+
+.back-photo {
+    background-image: url(9-tailed-fox.jpg);
+}
+
+/* puts text to the left */
+.grid-left{
+    display: inline;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* puts text to the right */
+.grid-right{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+
+}
+
+/* search bar styles */
+.search {
+    position: right;
+    padding: 0px;
+    margin-right: 10px;
+    width: 200px;
+
+}
+
+.search input[type=text] {
+    position: right;
+    padding: 3px;
+    margin-top: 6px;
+    margin-right: 10px;
+    border: 1px black;
+    font-size: 12pt;
+}
+
+
+
+
+/* Quick list styles */
+
+.quick-list {
+    display: grid;
+    width: 50%;
+    grid-template-rows: top auto top auto;
+    border: 1px solid rgba(0, 0, 0, 0.8);  
+    text-align: top;
+    grid-row-gap: 1px;
+    overflow: auto;
+    /* max-width: 600px; */
+    min-width: 355px;
+    /* background-image: url(9-tailed-fox.jpg) */
+}
+
+@media screen and (max-width: 800px){
+    #quick-list-id {width: 100%; clear: left;}
+    #naruto {float: left;}
+}
+
+/* .quick-list::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+.quick-bar {
+    background-color: orange;
+    color: navy;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+/* main grid styles */
+
+
+.main-grid {
+    display: grid;
+    width: 90%;
+    clear: right;
+    grid-template-columns: 100px auto auto;
+    background-color: #d9d9d980;
+    
+    border: 1px solid black;
+    grid-row-gap: 0px;
+    margin: 0px;
+}
+
+
+.main-grid-header {
+    text-align: center;
+    border: 1px solid black;
+    background-color: orange;
+    color: navy;
+    margin:0px;
+}
+
+.main-grid-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px;
+    background-color: inherit;
+}
+
+
+
+div.photo {
+    float: right ;
+    min-width: 355px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+/* div[display~="grid"] {
+    
+} */
+
+
+.button {
+    
+}
+
+.search_history {
+    display: block;
+    position: right 100px;
+    border: 1px black;
+    width: 200px;
+    z-index: 1;
+
+}
+
+.search:hover {
+    
+}
