@@ -38,6 +38,8 @@ const server = http.createServer(function(req, res) {
         }
         res.end()
     });
+
+    // the following commented section were my attempt at passing forms throught the server for a the chat function
     // if (req.method === 'GET' && req.url === '/chat.html') {
     //     // Serve the HTML file with the chat form
     //     fs.readFile('chat.html', (err, data) => {

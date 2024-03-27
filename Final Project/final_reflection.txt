@@ -1,0 +1,19 @@
+This term I created 2 main sites.  The first one was a site that laid out a
+framework for a concrete company website aimed at marketing the company.
+For this site I would definitely go back and separate the styles from the 
+html.  With my understanding of css now I certainly could make the code much cleaner
+with a better understanding of how it works.  Instead of the method I used to make
+the 3 columns for the main page, I would use a grid instead and it would be much cleaner.
+I think as well I could use the @media query to make the website feel much more dynamic
+when resizing for different devices or window sizes.
+
+For the naruto fillers website, I wish I would have kept my style sheet more organised.  
+It felt like it was getting out of hand towards the end and it was hard to find stuff to make
+edits.  I also would have liked to get the chat feature to actually work. The best I was able
+to do was confirm that the get request was working when I asked for the form, but I couldnt get
+it to store anything or update the page.  It would just route me to another page with some 
+rudamentary text.  I also would have liked to figure out how to bring text straight from the csv file
+rather than from a giant string pasted in my JS code but it went a bit above my head how that was supposed to
+work in JS so I opted not to.  Overall I think the vision of the site came out close to what I wanted though,
+so that is definitely a plus.  It looks very close to what I imagined even if the functionality leaves
+much to be desired.
